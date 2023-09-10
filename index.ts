@@ -3,8 +3,8 @@ import figlet from "figlet";
 const server = Bun.serve({
   port: 3001,
   fetch(req) {
-    const body = figlet.textSync(`Bun!`)
-    return new Response(body);
+    const message = "Hello how  you "
+    return new Response(message);
   },
 });
 
